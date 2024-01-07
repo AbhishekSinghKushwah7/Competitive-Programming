@@ -1,0 +1,232 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	for (int i=0; i<t; i++)
+	{
+	    int a,b,c,d,e,f,x,y;
+	    cin>>a>>b>>c>>d>>e>>f;
+	    while(a>=b && b>=c)
+	    {
+	        x=a+b;
+	        if(d>=e && e>=f)
+	        {
+	            y=d+e;
+	            if(x>y)
+	            {
+	                cout<<"Alice"<<endl;
+	            }
+	            else if(y>x)
+	            {
+	                cout<<"Bob"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"Tie"<<endl;
+	            }
+	        }
+	         else if(e>=f && f>d)
+	        {
+	            y=e+f;
+	            if(x>y)
+	            {
+	                cout<<"Alice"<<endl;
+	            }
+	            else if(y>x)
+	            {
+	                cout<<"Bob"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"Tie"<<endl;
+	            }
+	        }
+	         else
+	        {
+	            y=d+f;
+	            if(x>y)
+	            {
+	                cout<<"Alice"<<endl;
+	            }
+	            else if(y>x)
+	            {
+	                cout<<"Bob"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"Tie"<<endl;
+	            }
+	        }
+	        break;
+	    }
+	     while(b>=c && c>a)
+	    {
+	        x=b+c;
+	        if(d>=e && e>=f)
+	        {
+	            y=d+e;
+	            if(x>y)
+	            {
+	                cout<<"Alice"<<endl;
+	            }
+	            else if(y>x)
+	            {
+	                cout<<"Bob"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"Tie"<<endl;
+	            }
+	        }
+	         else if(e>=f && f>d)
+	        {
+	            y=e+f;
+	            if(x>y)
+	            {
+	                cout<<"Alice"<<endl;
+	            }
+	            else if(y>x)
+	            {
+	                cout<<"Bob"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"Tie"<<endl;
+	            }
+	        }
+	         else
+	        {
+	            y=d+f;
+	            if(x>y)
+	            {
+	                cout<<"Alice"<<endl;
+	            }
+	            else if(y>x)
+	            {
+	                cout<<"Bob"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"Tie"<<endl;
+	            }
+	        }
+	        break;
+	    }
+	     while(c>=a && a>b)
+	    {
+	        x=a+c;
+	        if(d>=e && e>=f)
+	        {
+	            y=d+e;
+	            if(x>y)
+	            {
+	                cout<<"Alice"<<endl;
+	            }
+	            else if(y>x)
+	            {
+	                cout<<"Bob"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"Tie"<<endl;
+	            }
+	        }
+	         else if(e>=f && f>d)
+	        {
+	            y=e+f;
+	            if(x>y)
+	            {
+	                cout<<"Alice"<<endl;
+	            }
+	            else if(y>x)
+	            {
+	                cout<<"Bob"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"Tie"<<endl;
+	            }
+	        }
+	         else
+	        {
+	            y=d+f;
+	            if(x>y)
+	            {
+	                cout<<"Alice"<<endl;
+	            }
+	            else if(y>x)
+	            {
+	                cout<<"Bob"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"Tie"<<endl;
+	            }
+	        }
+	        break;
+	    }
+	    
+	}
+	return 0;
+}
+
+<<<<<<<<<<<<<THIS WAS MY SOLUTION (INCORRECT)>>>>>>>>>>>>>>>>>
+
+#include <iostream>
+#include<climits>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	for(int i=0;i<t;i++){
+	    int a1,a2,a3,b1,b2,b3;
+	    cin>>a1>>a2>>a3>>b1>>b2>>b3;
+       int sum1=a1+a2;
+       int sum2=a1+a3;
+       int sum3=a2+a3;
+       int largest1;
+       if(sum1>=sum2 && sum1>=sum3){
+            largest1=sum1;
+       }
+       else if(sum2>=sum1 && sum2>=sum3){
+           largest1=sum2;
+           
+       }
+       else{
+           largest1=sum3;
+       }
+       int sum4=b1+b2;
+       int sum5=b1+b3;
+       int sum6=b2+b3;
+       int largest2;
+       if(sum4>=sum5 && sum4>=sum6){
+            largest2=sum4;
+       }
+       else if(sum5>=sum4 && sum5>=sum6){
+           largest2=sum5;
+           
+       }
+       else{
+           largest2=sum6;
+       }
+       if(largest1>largest2){
+           cout<<"Alice"<<endl;
+       }
+       else if(largest1==largest2){
+           cout<<"Tie"<<endl;
+       }
+       else{
+           cout<<"Bob"<<endl;
+       }
+	    
+	    
+	}
+	return 0;
+}
+
+
+<<<<<<<<<<<<<<THIS IS THE PERFECT SOLUTION>>>>>>>>>>>>
