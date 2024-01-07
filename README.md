@@ -1,2 +1,2 @@
-# Projects-and-Questions
-These are some questions from competitive programming, and some projects. 
+# Competetive Programming
+These are some questions from competitive programming 
